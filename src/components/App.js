@@ -1,5 +1,4 @@
 import React from "react";
-import SearchBar from "./SerachBar";
 import MovieList from "./MovieList";
 
 class App extends React.Component {
@@ -12,7 +11,7 @@ class App extends React.Component {
         overwiev:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, error! ",
         imageURL:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPChLezJc8e7wbfs4Ul-dQ3KVEr3tf2WtQNQ&usqp=CAU",
+          "https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/8/0/3/1206803_Intersetellar.jpg",
       },
       {
         id: 2,
@@ -21,7 +20,7 @@ class App extends React.Component {
         overwiev:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, error! ",
         imageURL:
-          "https://w7.pngwing.com/pngs/584/138/png-transparent-lunar-surface-interstellar-crossing-lunar-surface-astronaut.png",
+          "https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/8/0/3/1206803_Intersetellar.jpg",
       },
     ],
   };
@@ -30,11 +29,9 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-lg-12">
-            <SearchBar />
-          </div>
+          <div className="col-lg-12"></div>
         </div>
-        <MovieList />
+        <MovieList movies={this.state.movies} />
       </div>
     );
   }

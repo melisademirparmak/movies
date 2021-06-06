@@ -1,33 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
 
-class MovieList extends Component {
-  render() {
-    return (
-      <div className="row">
-        <div className="col-lg-4">
+const MovieList = (props) => {
+  return (
+    <div className="row">
+      {props.movies.map((movie) => (
+        <div className="col-lg-4" key={movie.id}>
           <div className="card mb-4 shadow-sm">
-            <img
-              src="https://d1nslcd7m2225b.cloudfront.net/Pictures/480xAny/8/0/3/1206803_Intersetellar.jpg"
-              alt="İmage 1"
-              className="card-img-top"
-            />
+            <img src={movie.imageURL} alt="İmage 1" className="card-img-top" />
             <div className="card-body">
-              <h5 className="card-title">Sample Movie</h5>
-              <p className="card-text">Sample movie description</p>
+              <h5 className="card-title">{movie.name}</h5>
+              <p className="card-text">{movie.overwiev}</p>
               <div className="d-flex justify-content-between align-items-center">
-                <button type="button" className="btn btn-md bn-outline-danger">
-                  Göster
+                <button type="button" className="btn btn-md btn-outline-danger">
+                  Delete
                 </button>
                 <h2>
-                  <span className="badge bg-info">9.0</span>
+                  <span className="badge bg-info">{movie.rating}</span>
                 </h2>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    );
-  }
-}
+      ))}
+    </div>
+  );
+};
 
 export default MovieList;
