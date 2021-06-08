@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/style.css";
 
 const MovieList = (props) => {
   return (
@@ -13,7 +14,7 @@ const MovieList = (props) => {
             />
             <div className="card-body">
               <h5 className="card-title">{movie.title}</h5>
-              <p className="card-text">{movie.overview}</p>
+              <p className="card-text fs-6">{movie.overview}</p>
               <div className="d-flex justify-content-between align-items-center">
                 <button
                   type="button"
