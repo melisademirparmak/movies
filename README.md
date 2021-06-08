@@ -7,10 +7,10 @@
 
 ## The goal of the project
 
-Shooting popular movies via API
+With API, popular movies are retrieved, deleted and searched.
 
 ## Download node modules:
-`npm i`
+`npm install`
 
 ## To run the project
 `npm start`
