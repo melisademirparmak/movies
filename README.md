@@ -1,7 +1,7 @@
 # Movie List
 
 ![Movie List Design](https://github.com/melisademirparmak/movies/blob/master/src/images/preview.PNG)
-## Available Scripts
+
 
 
 
